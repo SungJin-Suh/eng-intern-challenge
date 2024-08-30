@@ -21,6 +21,22 @@ char_to_braille_map = {
 }
 
 def text_to_braille(text: str) -> str:
+    """
+    Converts a given text string to its corresponding Braille representation.
+
+    This function translates each character in the input text to its corresponding Braille pattern.
+    It handles digits by prefixing them with a Braille number indicator and converts uppercase letters
+    to lowercase, prefixing them with a Braille capital letter indicator.
+
+    :param text: the input text string to be converted to Braille representation
+    :precondition: text is a string containing only alphanumeric characters and punctuation
+    :postcondition: the input text is converted to its Braille representation
+    :return: the Braille representation of the input text
+
+    >>> text = "Hello world"
+    >>> text_to_braille(text)
+    '.....OO.OO..O..O..O.O.O.O.O.O.O..OO........OOO.OO..OO.O.OOO.O.O.O.OO.O..'
+    """
     result = ""
     is_number = False
     
