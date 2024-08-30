@@ -4,3 +4,4 @@ yarn.lock
 package-lock.json
 Gemfile.lock
 .idea
+translator.cpython-312.pyc
